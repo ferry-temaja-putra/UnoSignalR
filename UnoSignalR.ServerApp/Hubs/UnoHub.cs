@@ -9,7 +9,7 @@ namespace UnoSignalR.ServerApp.Hubs
     {
         public async Task PushMessage(string message)
         {
-            await Clients.All.ReceiveMessage($"{message} <{DateTime.Now.ToLongTimeString()}>");
+            await Clients.All.ReceiveMessage($"{message} - {DateTime.Now.ToLongTimeString()}");
         }
 
     }
