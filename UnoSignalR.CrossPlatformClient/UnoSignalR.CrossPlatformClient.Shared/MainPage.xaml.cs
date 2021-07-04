@@ -29,6 +29,8 @@ namespace UnoSignalR.CrossPlatformClient
             clientId = "UWP";
 #elif HAS_UNO_WASM
             clientId = "WASM";
+#elif HAS_UNO_SKIA
+            clientId = "SKIA";
 #endif
 
         }
@@ -59,10 +61,23 @@ namespace UnoSignalR.CrossPlatformClient
             UIMessages.Add(new UIMessage { Message = $"Connected to the hub." });
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async Task SubmitMessage()
         {
             var message = $"{clientId}: {MessageTextBox.Text}";
             await connection.InvokeAsync(nameof(IUnoHub.PushMessage), message);
+        }
+
+        private async void Button_Click(object sender, RoutedEventArgs e)
+        {
+            await SubmitMessage();
+        }
+
+        private async void MessageTextBox_KeyDown(object sender, Windows.UI.Xaml.Input.KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                await SubmitMessage();
+            }
         }
     }
 }

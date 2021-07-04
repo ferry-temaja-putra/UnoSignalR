@@ -39,6 +39,8 @@ Global
 		UnoSignalR.Base.Shared\UnoSignalR.Base.Shared.projitems*{461615d1-6fa5-4149-aef3-2a04ae724d32}*SharedItemsImports = 4
 		UnoSignalR.CrossPlatformClient\UnoSignalR.CrossPlatformClient.Shared\UnoSignalR.CrossPlatformClient.Shared.projitems*{461615d1-6fa5-4149-aef3-2a04ae724d32}*SharedItemsImports = 4
 		UnoSignalR.CrossPlatformClient\UnoSignalR.CrossPlatformClient.Shared\UnoSignalR.CrossPlatformClient.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
+		UnoSignalR.Base.Shared\UnoSignalR.Base.Shared.projitems*{7fe65889-2e2b-47d9-8475-b71caf057e9f}*SharedItemsImports = 5
+		UnoSignalR.CrossPlatformClient\UnoSignalR.CrossPlatformClient.Shared\UnoSignalR.CrossPlatformClient.Shared.projitems*{7fe65889-2e2b-47d9-8475-b71caf057e9f}*SharedItemsImports = 5
 		UnoSignalR.Base.Shared\UnoSignalR.Base.Shared.projitems*{b41ce620-cdb4-45ce-a607-3bf40ca55354}*SharedItemsImports = 4
 		UnoSignalR.CrossPlatformClient\UnoSignalR.CrossPlatformClient.Shared\UnoSignalR.CrossPlatformClient.Shared.projitems*{b41ce620-cdb4-45ce-a607-3bf40ca55354}*SharedItemsImports = 4
 		UnoSignalR.Base.Shared\UnoSignalR.Base.Shared.projitems*{c4837549-0897-458f-ba6c-ce69cb5f697c}*SharedItemsImports = 13
